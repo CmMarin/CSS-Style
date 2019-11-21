@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <style>
+            /* GLOBAL STYLES */
+            /* TAG  SELECTOR*/
+            body{background-color: #333;
+            width: 360px;
+            }
+            
+            p{background-color: #009900;
+              width: 100px; 
+              height: 100px;
+              float: left;
+              margin: 10px;
+            }
+           
+           /*Class Selector*/
+           .row{ background-color: brown;
+           }
+           .col{ border-radius: 50px;
+           }
+           /*ID Selector*/
+           #first{ border-radius: 50px 0 0 0
+           }
+           #last{ border-radius: 0 0 50px 0
+           }
+           .R3{ border-radius: 0 50px 0 0 
+           }
+           .R8{ border-radius: 0 0 0 50px 
+           }
+        </style>
+
+    </head>
+
+
+    <body>
+        <p id="first">1</p>
+        <p class="col">2</p>
+        <p class="R3" >3</p>
+        <p class="row">4</p>
+        <p class="row col">5</p>
+        <p class="row">6</p>
+        <p class="R8" >8</p>
+        <p class="col" >7</p>
+        <p id="last">9</p>
+    
+    </body>
+    
+    </html>
