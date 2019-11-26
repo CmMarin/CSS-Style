@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <title>CSS and gallery stuff</title>
+        <link rel="icon" href="http://icons.iconarchive.com/icons/graphicloads/100-
+        flat/64/camera-icon.png">
+
+        <style>
+            body{background-color: #333;
+            }
+            
+            #container{border-bottom: 10px solid #D6E1D9;
+                       text-align: center;
+                       padding-bottom: 70px;
+                       padding-top: 55px              
+            }
+            
+            img{margin-left:-160px;
+                margin-right:-160px;
+                border: 3.5px solid rgb(187, 250, 255);
+                padding:8px;
+                background-color: #414141;
+                box-shadow: 0 0 5px 3px #111
+
+            }
+            /* trasnform: rotate, translate, scale , skew */
+            
+            .i1{transform: rotate(5deg)
+            }
+            .i2{transform: rotate(10deg)
+            }
+            .i3{transform: rotate(15deg)
+            }
+            .i4{transform: rotate(20deg)
+            }
+            .i5{transform: rotate(25deg)
+            }
+            
+            img:hover{ border-color: rgb(6, 141, 243);
+                       transition-duration: 0.45s;
+                       transform: rotate(360deg)
+            }
+        
+        
+        
+        </style>
+
+    </head>
+    
+    <body>
+        <div id="container">
+            <img class="i1" src="https://picsum.photos/id/228/300/500">
+            <img class="i2" src="https://picsum.photos/id/2/300/500  ">
+            <img class="i3" src="https://picsum.photos/id/312/300/500">
+            <img class="i4" src="https://picsum.photos/id/596/300/500">
+            <img class="i5" src="https://picsum.photos/id/4/300/500  ">
+        </div>
+    
+    
+    </body>
+
+
+</html>
