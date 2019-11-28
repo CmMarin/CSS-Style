@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+    <head>
+        <title>Pseudo ceva</title>
+        <style>
+            body{background-color: #333333;
+            }
+
+            .player{text-align: center;
+                    margin: 50px;;
+            }
+
+            form{margin: 30px;
+
+            }
+
+            button{ padding: 4px;
+                    border-radius: 50px;
+
+            }
+            button:nth-child(2){padding: 8px; 
+                                margin: 10px;
+                               
+            }
+            button:nth-child(2):hover{background-color: #0092f4;
+            }
+            
+            button:nth-child(2):active{background-color: #00eeff;
+            }
+            
+            button:first-child::after{content: "    \25CF";
+                                      opacity:0.5;
+            }
+
+            button:last-child::before{content: "\25CF     ";
+                                      opacity:0.5;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="player">
+                <iframe width="727" height="409" src="https://www.youtube.com/embed/464puoD09dM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <form>
+        
+                <button>&#9194;</button>
+                <button>&#9205;</button>
+                <button>&#9193;</button>
+                
+            </form>
+
+        </div>
+
+        
+    </body>
+    
+    </html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    
+
+
+    <html lang="en">
+    
+    <head>
+        <title>'-'</title>
+        <style>
+            body{background-color: #333333;
+
+            }
+
+            .smile{width: 200px;
+                   height:200px;
+                   background-color:yellow;
+                   margin-left: auto;
+                   margin-right: auto;
+                   border-radius: 100%; 
+                   margin-top: 200px;
+                   text-align: center;
+                   font-size: 35px;
+                   line-height: 120px;
+                   border-top: 20px solid goldenrod;
+                   color: rgb(14, 208, 221)
+                   
+            }
+
+            .smile::after{content:"\2B24";
+                          padding:10px;
+                          border-left: black 2px solid;
+
+            }
+            .smile::before{content:"\2B24";
+                           padding:10px;
+                           border-right: black 2px solid;
+                
+            }
+
+            .smile:hover{ background-color: #0dff00;
+
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div class="smile">
+
+        </div>
+    </body>
+    
+    </html>

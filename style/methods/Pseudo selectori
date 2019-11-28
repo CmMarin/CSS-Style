@@ -1,0 +1,41 @@
+
+
+
+
+- state
+    :hover
+    :active
+    :focus
+    :checked
+    :visited
+    ...
+
+
+- structural
+    :fisrt-child
+    :nth-child(n)
+    :last-child
+    ...
+
+-logical
+    :not(selector)
+    ...
+
+-elements
+    ::before
+    ::after
+    ::slection
+
+Ex. 
+   
+    <p>[before] Text</p>
+p::before{
+    ...
+}
+ 
+ <p>Text [after]</p>
+p::after{
+    ...
+}
+
+
