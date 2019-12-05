@@ -1,0 +1,119 @@
+
+    <!-- * grouping -->
+    
+    Selector 1,Selector 2,Selector 3,Selector 4...
+    
+    ex.(p, a, li, .first , .no-border , :hover ...{
+        color:red;
+    })
+
+    <!-- *direct descendant -->
+
+    Selector1>Selector2>Selector3... <== stilurile se aplica numai la ultimul 
+
+    Calea ierarhica exacta
+
+    ex.(div>p>b )
+
+    <!-- <div> 
+     <p><b> Lorem</b> ipsum dolor sit amet.</p>
+     <p>Perferendis accusamus eaque sed deserunt?</p>
+     <p>Sint reprehenderit est nihil ducimus.</p>
+ </div>
+ <div>
+     <p>Odit asperiores libero ad nostrum!</p>
+     <p>Fugit <a href=""> <b> deleniti</b></a> dignissimos vitae facere!</p>
+     <p>Aliquam tenetur commodi voluptas impedit?</p>
+ </div> -->
+
+    NUMAI DLENITI va fi afectat
+
+    <!-- * descendant -->
+
+    Selector 1 Selector 2 Selector 3 <== stilurile se aplica numai la ultimul 
+    
+    Calea ierarhica aproximativa
+
+    ex.(div b)
+
+    <!-- <div> 
+     <p><b> Lorem</b> ipsum dolor sit amet.</p>
+     <p>Perferendis accusamus eaque sed deserunt?</p>
+     <p>Sint reprehenderit est nihil ducimus.</p>
+ </div>
+ <div>
+     <p>Odit asperiores libero ad nostrum!</p>
+     <p>Fugit <a href=""> <b> deleniti</b></a> dignissimos vitae facere!</p>
+     <p>Aliquam tenetur commodi voluptas impedit?</p>
+ </div> -->
+
+ Amandoua <b></b> vor fi afectate
+
+    <!-- * Intersection -->
+
+    Selector1Selector2Selector3Selector4...
+
+
+    li.first{
+        color:red;
+    }
+
+    <!-- <ul class="first"> x
+        <li></li>
+        <li class="first"></li>
+        <li></li>
+    </ul>
+
+    <ul class="last">
+        <li class="first"></li>
+        <li class="last"></li>
+        <li class="first"></li>
+    </ul> -->
+ 
+    *Numai li din clasa .first vor fi afectati
+
+
+    <!-- *Next neighbour -->
+
+    Selector1+Selector2+Selector3+Selector4    <== stilurile se aplica numai la ultimul 
+ 
+    Calea ierarhica exacta
+
+    ex.
+
+    h2+p+p{
+        color:red;
+    }
+    
+    <!-- <h2> 
+        <p></p>
+        <p></p>
+        <p></p>
+    </h2>
+    <h2>
+        <p></p>
+        <p></p>
+        <p></p>
+    </h2> -->
+
+
+    numai 90 si 95 for fi afectate
+
+    <!-- * attribute -->
+
+    <style>
+        [width="300"]{
+            color: red;
+        }
+    </style>
+
+    <h1><img width="300"></h1>          <== Numai aista
+    <h1><img width="500" ></h1>         
+
+    <!-- * universal/all -->
+
+    *{
+        color:red;
+    }
+
+    Everything will become a red boi
