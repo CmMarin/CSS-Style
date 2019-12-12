@@ -1,0 +1,67 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333;
+    }
+
+    .navbar{
+    height: 56px;
+    background-color: #444444;
+    padding:0 40px;
+    }
+
+    .navbar li:first-child{
+        margin-top:4px
+    }
+
+    .navbar li:last-child{
+        float: right;
+    }
+
+    .navbar li:nth-child(2){
+        margin:19px 40px;
+    }
+
+    .navbar li:nth-child(3){
+        margin:19px 50px;
+    }
+
+    .navbar li:nth-child(5){
+        margin:19px 10px;
+    }
+
+
+    .navbar li{
+        float: left;
+        margin-top:19px;
+    }
+
+    .navbar a{
+        color: rgb(175, 175, 175);
+        text-decoration: none;
+    }
+
+    .navbar a:hover{
+        color:white;
+    }
+
+    .navbar li:nth-child(2) a{
+            background-color: rgb(124, 124, 124);
+            padding: 10px;
+            border-radius: 15px;
+            color:white;
+            font-weight: bold;
+            box-shadow: 0 0 5px 1px #111;
+    }
+
+    .navbar .fa-phone{
+        animation: flash .3s 3;
+        padding-right: 6px;
+    }
+
+    @keyframes flash {
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+
+
