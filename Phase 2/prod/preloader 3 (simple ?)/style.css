@@ -1,0 +1,36 @@
+body{
+    background-color: #333333;
+    perspective: 700px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: solid 10px white;
+    margin: 100px;
+    border-radius: 20px;
+    /* transform: rotateY(45deg); */
+    animation:rot1 5s infinite;
+}
+
+.box-sm{
+    width: 20px;
+    height: 20px;
+    background-color:lime;
+    transform: translateX(-40px) translateY(-40px);
+    animation: run 5s infinite;
+    border-radius: 6px;
+}
+
+@keyframes run {
+    0%{ transform: translateX(-40px) translateY(-40px);}
+    25%{ transform: translateX(220px) translateY(-40px);}
+    50%{ transform: translateX(220px) translateY(220px);}
+    75%{ transform: translateX(-40px) translateY(220px);}
+    100%{ transform: translateX(-40px) translateY(-40px);}
+}
+
+@keyframes rot1 {
+    from{transform: rotateY(0);}
+    to{transform: rotateY(360deg);}
+}
