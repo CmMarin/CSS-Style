@@ -1,0 +1,75 @@
+body{
+    background-color: #333333;
+
+}
+
+.box{
+    width: 300px;
+    height: 400px;
+    background-color: #444444;
+    overflow:hidden;
+}
+
+.box div:nth-child(1){
+    height: 5px;
+    width: 300px;
+    background-color:lime;
+    animation: bd1 2s 1;
+}
+
+.box div:nth-child(2){
+    height: 400px;
+    width: 5px;
+    background-color:lime;
+    transform: translateX(295px) translateY(-5px);
+    animation: bd2 2s 1;
+    animation-delay: 2s;
+    transform: translateX(295px) translateY(-405px);
+    animation-fill-mode: forwards;
+}
+
+.box div:nth-child(3){
+    height: 5px;
+    width: 300px;
+    background-color:lime;
+    transform:translateY(-10px);
+    animation: bd3 1 2s;
+    animation-delay: 4s;
+    transform:translateY(-10px) translateX(300px);
+    animation-fill-mode: forwards;
+}
+
+.box div:nth-child(4){
+    height: 400px;
+    width: 5px;
+    background-color:lime;
+    transform: translateY(-410px);
+    animation: bd4 1 2s;
+    animation-delay: 5.5s;
+    transform: translateY(405px) ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bd1 {
+    from{transform: translateX(-300px)}
+    to{transform: translateX(0px)}
+    
+}
+
+@keyframes bd2 {
+    from{transform: translateX(295px) translateY(-400px);}
+    to{transform: translateX(295px) translateY(-5px)}
+    
+}
+
+@keyframes bd3 {
+    from{transform:translateY(-10px) translateX(300px);}
+    to{transform:translateY(-10px);}
+    
+}
+
+@keyframes bd4 {
+    from{ transform: translateY(405px) }
+    to{ transform: translateY(-405px)}
+    
+}

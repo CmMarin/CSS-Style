@@ -1,0 +1,47 @@
+
+.toggle input{
+    display: none;
+}
+
+.toggle span{
+    background-color: #333333;
+    padding: 5px;
+    border-radius: 40px;
+    color: #888888
+}
+
+.toggle input:checked+span{
+    color:white;
+}
+
+.toggle span::before{
+    content:"on";
+    display: none;
+
+}
+.toggle span::after{
+    content:"off";
+
+}
+
+.toggle input:checked+span::after{
+    display: none;
+
+}
+
+.toggle input:checked+span::before{
+    display: inline;
+
+} 
+
+.toggle input+span .fa-check-circle{
+    display:none;
+}
+
+.toggle input:checked+span .fa-check-circle{
+    display:inline;
+}
+
+.toggle input:checked+span .fa-times-circle{
+    display:none;
+}
