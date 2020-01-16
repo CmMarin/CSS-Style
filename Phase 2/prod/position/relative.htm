@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <style>
+        body{
+            background-color: #333333;
+        }
+
+        .container{
+            border: 5px solid lime;
+            float: left;
+            padding: 10px;
+        }
+        .container div{
+            width: 100px;
+            height: 100px;
+        }
+        #d1{
+            background-color: lightblue;
+        }
+        #d2{
+            background-color: lightcyan;
+            position: relative;
+            top: 100px;
+            z-index:-1; 
+        }
+
+        #d3{
+            background-color:lightgreen;
+        }
+    </style>
+    <title>Relative positioning</title>
+</head>
+<body>
+    <div class="container">
+        <div id="d1">1</div>
+        <div id="d2">2</div>
+        <div id="d3">3</div>
+    </div>
+    
+</body>
+</html>
