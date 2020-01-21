@@ -1,0 +1,46 @@
+body{
+    background-color: #333333;
+}
+
+#contacts a{
+    color: #333333;
+    display: block;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: rgb(211, 164, 77);
+    text-align: center;
+    margin-bottom:.3em;
+    line-height: 3.5em;
+    box-shadow: 2px 3px black;
+}
+
+#contacts i{
+    font-size: 25px;
+}
+
+#contacts li:last-child a{
+    margin-bottom:0;
+    color: rgb(211, 164, 77);
+    background-color: #333333;
+    border: solid;
+    box-sizing: border-box;
+    line-height: 3.1em;
+}
+
+#contacts{
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    overflow: hidden;
+    padding: 4px;
+}
+
+#contacts li{
+    transform: translateY(9.9em);
+    transition: .8s;
+}
+
+#contacts:hover li{
+    transform: translateY(0em)
+}
