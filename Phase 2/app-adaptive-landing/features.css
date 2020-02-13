@@ -1,0 +1,103 @@
+body{
+    background-color: #f7f7f7;
+}
+
+
+/* Stiluri comune */
+
+.container{
+    width: 1140px;
+    margin: auto;
+    /* background-color: lightgreen; */
+
+}
+
+.tr{
+    text-align: right;
+}
+
+.tl{
+    text-align: left;
+}
+
+.tc{
+    text-align: center;
+}
+
+
+
+/* Stiluri specifice sectiunii */
+
+#features .table{
+    display: table;
+}
+
+#features .row{
+    display: table-row;
+}
+
+#features .table .row>*{
+    display: table-cell;
+    /* background-color:lightblue; */
+    vertical-align: top;
+}
+
+#features .table ul{
+    width: 30%
+}
+
+#features .table div{
+    width: 30%;
+    /* text-align: center; */
+}
+
+#features .row div img{
+    width: 80%;
+}
+#features li::before{
+    content:"";
+    color:red;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 3.5em
+}
+#features ul:first-child li:nth-child(1)::before{
+    background-image: url(imgs/devices_other-24px.svg);
+    left:1em;
+}
+#features ul:first-child li:nth-child(2)::before{
+    background-image: url(imgs/dashboard-24px.svg);
+    left:1em;
+}
+#features ul:first-child li:nth-child(3)::before{
+    background-image: url(imgs/language-24px.svg);
+    left:1em;
+}
+#features ul:last-child li:nth-child(1)::before{
+    background-image: url(imgs/touch_app-24px.svg);
+    right: 1em;
+}
+#features ul:last-child li:nth-child(2)::before{
+    background-image: url(imgs/insert_emoticon-24px.svg);
+    right: 1em;
+}
+
+#features ul:last-child li:nth-child(3)::before{
+    background-image: url(imgs/chat-24px.svg);
+    right: 1em;
+}
+
+#features .table ul h2{
+    margin-bottom: 2em;
+    font-size: 1.5em;
+}
+
+/* #features .row ul:first-child{
+    text-align: right;
+} */
+
+/* #features .row ul:nth-child(3){
+    text-align: left;
+} */
