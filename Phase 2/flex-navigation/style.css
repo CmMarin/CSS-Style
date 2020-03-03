@@ -1,0 +1,27 @@
+#navbar{
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ul{
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#navbar ul:first-of-type{
+    margin-left: 5em;
+}
+
+#navbar ul:last-of-type{
+    margin-right: 5em;
+}
+a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
